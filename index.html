@@ -103,9 +103,9 @@
     .publication-links .icon {
       margin-right: 0.5rem;
     }
-
+      
     /* Media Containers */
-    .teaser video, .carousel img, .publication-video iframe {
+    .teaser video, .teaser img, .carousel img, .publication-video iframe {
       border-radius: 16px;
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
       overflow: hidden;
@@ -226,13 +226,12 @@
       </div>
     </section>
 
-    <!-- Teaser Section -->
+<!-- Teaser Section -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
-            <source src="static/videos/banner_video.mp4" type="video/mp4">
-          </video>
+          <!-- 这里将原本的 video 换成了 img -->
+          <img src="static/images/img.png" alt="BRACE Teaser" style="width: 100%; height: auto;" />
           <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem; color: #4b5563;">
             BRACE addresses caching bottlenecks in generative visual models, ensuring high-fidelity generation while drastically reducing computational overhead.
           </h2>
