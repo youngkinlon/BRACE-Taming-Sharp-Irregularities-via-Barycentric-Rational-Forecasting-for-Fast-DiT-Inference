@@ -131,6 +131,26 @@
       margin-bottom: 2rem;
     }
 
+    .evidence-figure {
+      margin: 0;
+    }
+    .evidence-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -8px rgba(17, 24, 39, 0.18);
+    }
+    .evidence-figure figcaption {
+      max-width: 72rem;
+      margin: 1rem auto 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
     /* BibTeX */
     #bibtex-code {
       background-color: #1f2937;
@@ -266,6 +286,15 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-widescreen">
+        <figure class="evidence-figure">
+          <img src="static/images/empirical_forecasting_evidence.png" alt="PC1 feature trajectory, cosine similarity, L1 error, and MSE error comparisons across diffusion sampling steps" loading="lazy" decoding="async"/>
+          <figcaption><strong>Empirical evidence.</strong> Barycentric rational forecasting closely follows the ground-truth feature trajectory while maintaining higher cosine similarity and lower L1 and MSE errors across sampling steps.</figcaption>
+        </figure>
       </div>
     </section>
 
