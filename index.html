@@ -151,6 +151,37 @@
       text-align: center;
     }
 
+    .method-figure {
+      margin: 0;
+    }
+    .method-figure-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: center;
+    }
+    .method-figure-grid img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -8px rgba(17, 24, 39, 0.18);
+    }
+    .method-figure figcaption {
+      max-width: 68rem;
+      margin: 1rem auto 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      .method-figure-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* BibTeX */
     #bibtex-code {
       background-color: #1f2937;
@@ -286,6 +317,19 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-widescreen">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <figure class="method-figure">
+          <div class="method-figure-grid">
+            <img src="static/images/brace_sequential_inference_algorithm.png" alt="BRACE sequential inference algorithm" loading="lazy" decoding="async"/>
+            <img src="static/images/brace_forecast_microarchitecture.png" alt="BRACE system-level update pipeline and forecast micro-architecture" loading="lazy" decoding="async"/>
+          </div>
+          <figcaption><strong>BRACE method overview.</strong> Sequential inference alternates exact computation with barycentric rational forecasting through a local sliding window, domain mapping, and a lightweight forecast micro-architecture.</figcaption>
+        </figure>
       </div>
     </section>
 
